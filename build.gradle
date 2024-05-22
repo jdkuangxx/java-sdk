@@ -23,6 +23,7 @@ ext {
     bcprovJDK18onVersion = '1.75'
     webankJavaCryptoVersion = "1.0.3"
     junitVersion = '4.13.2'
+    rxjavaVersion = '2.2.2'
     commonsCollections4Version = "4.4"
     bcosSdkJniVersion = "3.7.0"
     slf4jApiVerison = '1.7.36'
@@ -140,6 +141,7 @@ dependencies {
     api("com.moandjiezana.toml:toml4j:${toml4jVersion}") {
         exclude group: "com.google.code.gson"
     }
+    api("io.reactivex.rxjava2:rxjava:$rxjavaVersion")
 
     integrationTestImplementation project
     integrationWasmTestImplementation project
